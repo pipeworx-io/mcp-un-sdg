@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/un-sdg",
+  "title": "Un Sdg",
+  "description": "UN Sustainable Development Goals (SDG) Indicators MCP — UN Statistics Division.",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/un-sdg",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-un-sdg",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/un-sdg/mcp"
+    }
+  ]
+}
