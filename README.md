@@ -2,12 +2,17 @@
 
 UN Sustainable Development Goals (SDG) Indicators MCP — UN Statistics Division.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 250+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
+| `list_goals` | List the 17 UN Sustainable Development Goals (code, title, description). Optionally drill into one goal to get its targets and indicators. |
+| `list_indicators` | The queryable catalog of SDG indicators. Each indicator (e.g. "1.1.1") nests its data series with their series codes (e.g. "SI_POV_DAY1"). Use a series code as seriesCode in get_series_data. |
+| `list_series` | Flat list of all SDG data series (series code + description + goal/target/indicator it belongs to). Series codes are what you pass to get_series_data. Use this when you want the raw series list rather than the indicator-nested view from list_indicators. |
+| `list_geoareas` | List geographic areas with their M49 area codes (e.g. 1 = World, 4 = Afghanistan, 8 = Albania). Pass an M49 code as areaCode in get_series_data. |
+| `get_series_data` | Get observations for an SDG series in a geographic area over a time range. seriesCode comes from list_indicators/list_series; areaCode is an M49 code from list_geoareas. Returns { data: [...] } where each observation has value, timePeriodStart, geoAreaName, source, footnotes, etc. |
 
 ## Quick Start
 
@@ -23,7 +28,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 250+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +52,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
