@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/un-sdg",
   "title": "Un Sdg",
   "description": "UN Sustainable Development Goals (SDG) Indicators MCP — UN Statistics Division.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "websiteUrl": "https://pipeworx.io/packs/un-sdg",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-un-sdg",
