@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-un-sdg",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "UN Sustainable Development Goals (SDG) Indicators MCP — UN Statistics Division.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-un-sdg": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "un-sdg"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-un-sdg.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/un-sdg",
   "pipeworx": {
-    "sourceHash": "v1-69fbd2851343cc67f293cb131882cd0629a6bad6e28364da9335cb56b114eaf8",
-    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
+    "mode": "gateway",
+    "slug": "un-sdg",
+    "gatewaySlug": "un-sdg",
+    "sourceHash": "v1-f58dcacfd8d567930fa235cdf16d9fe61a36943007987cf226450a8891f54e26",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }
