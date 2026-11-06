@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-un-sdg",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "UN Sustainable Development Goals (SDG) Indicators MCP — UN Statistics Division.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "un-sdg",
     "gatewaySlug": "un-sdg",
-    "sourceHash": "v1-f58dcacfd8d567930fa235cdf16d9fe61a36943007987cf226450a8891f54e26",
-    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
+    "sourceHash": "v1-59ec868217ad30d4f621f21b2461fedb18eb47c2d3455fb70afe2d7a9e0ac6d0",
+    "sourceCommit": "ca52e7ed1e1ccad897c2da1b0fa105edc0bc3b2e"
   }
 }
